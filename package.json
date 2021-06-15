@@ -1,0 +1,16 @@
+{
+  "name": "tw-yo-test-01",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "postcss src/css/tailwind.css -o dist/tailwind.css",
+    "watch": "postcss src/css/tailwind.css -o dist/tailwind.css --watch"
+  },
+  "dependencies": {
+      "autoprefixer": "^10.2.6",
+      "postcss"     : "^8.3.2",
+      "postcss-cli" : "^8.3.1",
+      "tailwindcss" : "^2.1.4"
+  },
+  "devDependencies": {}
+}
