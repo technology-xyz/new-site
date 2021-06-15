@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    
+    
+    <!--    Tailwinds CSS full boundle -->
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    
+    <!--    Tailwinds JIT compiler via CDN-->
+    <!--    https://beyondco.de/blog/tailwind-jit-compiler-via-cdn-->
+    
+    
+    <!-- Include CDN JavaScript -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    
+    
+    <!-- Specify a custom TailwindCSS configuration -->
+    <script type="module">
+        import tailwindcssTypography from 'https://cdn.skypack.dev/@tailwindcss/typography';
+        
+        window.tailwindConfig = {
+            plugins: [
+                tailwindcssTypography,
+            ]
+        };
+        
+        window.tailwindCSS.refresh();
+    </script>
+    <!-- Specify a custom TailwindCSS configuration -->
+    <script type="tailwind-config">
+{
+    theme: {
+        
+        extend: {
+        
+        backgroundImage: theme => ({
+                'nav-logo-sm': "url('./src/img/nav_logo_sm.svg')",
+                'main-bkg': "url('./src/img/main_bkg.svg')",
+                'grad-bkg': "url('./src/img/grad_bkg.png')"
+
+            }),
+        
+            colors: {
+                primary  : "#3acebc",
+                'dark-blue-800': '#0A214C',
+                'hulk-800': '#3D42F5',
+            },
+            fill: theme => theme('colors')
+        },
+        
+
+    }
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    <!-- Specify a custom TailwindCSS: Typography -->
+    <!--    <script type="tailwind-config">-->
+    <script type="application/javascript">
+        // /*
+        // import tailwindcssTypography from 'https://cdn.skypack.dev/@tailwindcss/typography';
+        
+        // window.tailwindConfig = {
+        let myTailwindConfig = {
+            
+            theme: {
+                extend: {
+                    colors: {
+                        primary  : "#3acebc",
+                        secondary: "#563399",
+                        neutral  : "#8b37a0",
+                        
+                        'dark-blue-800': '#0A214C',
+                        'xyz-vilet-500': '#6610f2',
+                    }
+                }
+            },
+            
+            plugins: [
+                //  tailwindcssTypography,
+            ]
+        };
+        
+        // window.tailwindCSS.refresh();
+        
+        // */
+    </script>
+    
+    <!-- Specify a custom TailwindCSS configuration -->
+    <script type="application/javascript">
+        
+        let myTheme = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary  : "#3acebc",
+                        secondary: "#563399",
+                        neutral  : "#8b37a0",
+                        
+                        'dark-blue-800': '#0A214C',
+                        'xyz-vilet-500': '#6610f2',
+                    }
+                }
+            }
+        }
+        
+        
+        let colors = {
+            "Primary"       : "#3acebc",
+            "Secondary"     : "#563399",
+            "Third-Central ": "#8b37a0",
+            "Secondary-Op"  : "66CCFF",
+            "Third-Op"      : "35373D"
+        }
+        let borderRadius = {
+            "none"   : "0",
+            "xs"     : "0.3125rem",
+            "sm"     : "0.9375rem",
+            "default": "1.1875rem",
+            "lg"     : "1.5625rem",
+            "xl"     : "1.875rem",
+            "2xl"    : "3.125rem"
+        }
+        // const ThemeColor = () => {}
+    
+    
+    </script>
+    
+    
+    <style>
+        .sec01_title_font {
+            font-family: Prompt;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 78px;
+            line-height: 133.7%;
+            /* or 104px */
+            color: #FFFFFF;
+        }
+        
+        .sec01_title {
+            
+            /* Welcome to .xyz Technologies */
+            position: absolute;
+            width: 1165px;
+            height: 96px;
+            left: 65px;
+            top: 118px;
+            
+            
+        }
+    </style>
+    
+    <title>Tailwinds JIT compiler via CDN</title>
+
+</head>
+
+<!--<body class="w-screen md:w-auto mx-auto " style="max-width: 1440px">-->
+<body class="h-screen bg-gradient-to-b from-gray-700 to-gray-900 mx-auto subpixel-antialiased                "
+      style="max-width: 1440px">
+    
+    
+    <header class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        
+        
+        <div class="block h-auto content-center ">
+            <a href="#">
+            <img src="src/img/cmpt/nav/nav_logo_square.svg" width="52" height="52" class="h-10" alt=""></a>
+        </div>
+        
+        
+        <!--        lado der -->
+        <div>
+            <button
+                    type="button"
+                    class="block text text-primary-500 hover:text-white focus:text-white focus:outline-none"
+                    style="clip-rule: evenodd;clip-path: content-box;"
+            
+            >
+                <svg class="h-6 w-6 text-white-500"
+                     fill="none" viewBox="0 0 40 40" stroke="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    
+                    
+                    <rect x="8.25" y="12.25" width="22.5" height="1.9375" rx="0.96875" fill="white" stroke="white"
+                          stroke-width="0.5" />
+                    <rect x="8.25" y="18.25" width="22.0455" height="1.86364" rx="0.931818" fill="white"
+                          stroke="white" stroke-width="0.5" />
+                    <rect x="8.25" y="24.25" width="22.5" height="1.9375" rx="0.96875" fill="white" stroke="white"
+                          stroke-width="0.5" />
+                    <circle cx="19.5" cy="19.5" r="19.25" stroke="white" stroke-width="0.5" />
+                
+                
+                </svg>
+                <!--                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">-->
+                <!--                    <path fill-rule="evenodd"-->
+                <!--                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />-->
+                <!--                </svg>-->
+            </button>
+        </div>
+    </header>
+    
+    
+    <style type="postcss">
+        .custom-class {
+            @apply bg-grad-bkg bg-right-top bg-no-repeat bg-cover
+        }
+        
+        .xyz-p-xs {
+            @apply text-white text-left text-base leading-loose tracking-wide
+        }
+        
+        .xyz-p-2xl {
+            @apply text-white text-left  text-2xl leading-loose tracking-wider
+        }
+        
+        .xyz-p-wide {
+            @apply text-white text-left text-3xl leading-relaxed tracking-wider
+        }
+        
+        .heading-s2-1 {
+            /* Defining Web3.0 */
+            
+            
+            /*width: 526px;*/
+            /*height: 83.57px;*/
+            /*left: 65px;*/
+            /*top: 75.08px;*/
+            
+            font-family: Prompt;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 68px;
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            
+            color: #3ACEBC;
+        }
+    </style>
+    
+    
+    <!--        <main class="grid grid-rows-2 grid-flow-col gap-4 mw-[1440px]  custom-class">-->
+    <main class="grid grid-flow-row  gap-4 mw-[1440px]  custom-class pb-12">
+        
+        <section class="px-4 md:pl-[62px] pt-24 mh-[510px]">
+            
+            <h2 class="sec01_title_font">Welcome to .xyz Technologies</h2>
+            
+            <div class="box-border pt-5 pl-4  w-full md:w-4/6 xyz-p-wide">
+                
+                <p class="text-white">
+                    Our vision is to exert unparalleled influence on creators and help advance the development of Web3.0
+                </p>
+                <p class="text-green-500 pt-4 md:pt-8">
+                    We are on a mission to build to build distributed networks that connect the future of internet
+                    services
+                    and allow individuals to own their digital assets.
+                </p>
+            </div>
+        </section>
+        
+        <section class="px-4 md:pl-[48px] pt-24  mh-[200px]">
+            <h3 class="heading-s2-1">Defining Web3.0</h3>
+            
+            <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xyz-p-xs justify-items-stretch">
+                
+                <div class="px-0 pt-4 md:pr-12">
+                    <p>
+                        From A to .XYZ we are the development experts for Web3.0 & Blockchain
+                        protocols.<br /><br />
+                        
+                        The x-y-z of advancing distributed projects starts with a process and
+                        ends with execution.
+                        Our process is simple, hire experienced designers, product managers and engineers. We
+                        specialize in building "full stack" peer-to-peer networks and help to unbundle web services in
+                        order to
+                        create community-operated protocols.
+                    </p>
+                </div>
+                
+                
+                <div class="px-0 pt-4 md:pd-0">
+                    <p>
+                        With a multi-cultural and distributed workforce, our project teams touch all areas of the modern
+                        web stack, and employ elements of Agile, CI and Test-Driven Development.
+                        <br /><br />
+                        We enjoy working with visionary founders and hackers to build and execute on productive growth.
+                    </p>
+                </div>
+            </div>
+        
+        
+        </section>
+    
+    </main>
+    
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2"
+                         class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Tailblocks</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-400 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-500 ml-1"
+                       target="_blank">@knyttneve</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+               viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+               viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+               class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <footer class="custom-class">
+        <div>
+            <div class="flex">
+                <div class="p-6">
+                    <img
+                            src="src/img/cmpt/nav/xyz_nav_logo.svg"
+                            alt=".xyz logo"
+                            width="218"
+                            height="83"
+                    />
+                </div>
+                
+                <div class="flex justify-around">
+                    <a href="">Discord</a>
+                    <a href="">Email</a>
+                    <a href="">Telegram</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex items-end p-6">
+            <ul class="flex-col">
+                <li class="text-white text-lg p-4 text-left font-extrabold">
+                    <a href="#" class="nav-link">
+                        Company
+                    </a>
+                </li>
+                <li class="text-white text-lg p-4 text-left font-extrabold">
+                    <a href="#" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="text-white text-lg p-4 text-left font-extrabold">
+                    <a href="#" class="nav-link">
+                        Team
+                    </a>
+                </li>
+                <li class="text-white text-lg p-4 text-left font-extrabold">
+                    <a href="#" class="nav-link">
+                        Mission
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="footer-emails">
+                <ul class="nav flex-column x-footer-contact">
+                    <li class=" text-lg p-4 text-left">
+                        <h3 class="text-green-400 font-extrabold">Contact Us:</h3>
+                    </li>
+                    
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:hello@tech.nology.xyz" class="nav-link">
+                            hello@tech.nology.xyz
+                        </a>
+                    </li>
+                    
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:solutions@tech.nology.xyz" class="nav-link">
+                            solutions@tech.nology.xyz
+                        </a>
+                    </li>
+                    
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:developer@tech.nology.xyz" class="nav-link">
+                            developer@tech.nology.xyz
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <ul class="flex-col justify-end block">
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:defi@tech.nology.xyz" class=" ">
+                            defi@tech.nology.xyz
+                        </a>
+                    </li>
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:jobs@tech.nology.xyz" class="nav-link">
+                            jobs@tech.nology.xyz
+                        </a>
+                    </li>
+                    <li class="text-white text-lg p-4 text-left">
+                        <a href="mailto:press@tech.nology.xyz" class="nav-link">
+                            press@tech.nology.xyz
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

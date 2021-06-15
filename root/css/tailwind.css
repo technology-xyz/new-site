@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sec01_title {
+
+    /* Welcome to .xyz Technologies */
+
+
+    position: absolute;
+    width: 1165px;
+    height: 96px;
+    left: 65px;
+    top: 118px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 78px;
+    line-height: 133.7%;
+    /* or 104px */
+
+
+    color: #FFFFFF;
+}
+
+@tailwind screens;
