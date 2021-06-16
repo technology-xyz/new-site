@@ -4,8 +4,8 @@
     position: fixed;
     min-height: 62px;
     padding: 0;
-    // background: $blueDarkBg;
-    background: url('/img/common/bk_header.svg') 100%;
+    background: $purpleDarkBg;
+    // background: url('/img/common/bk_header.svg') 100%;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.3);
@@ -109,8 +109,8 @@
         // width: 170px !important;
         // right: 0;
         // background: linear-gradient(90deg, #030332 0%, #171753 100%) !important;
-        background: url('/img/common/bk_header_mobile.svg') 100%;
-        background-size: contain;
+        // background: url('/img/common/bk_header_mobile.svg') 100%;
+        // background-size: contain;
         &.isOpened {
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16) !important;
         }
