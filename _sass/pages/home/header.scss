@@ -79,8 +79,6 @@
   }
   @media (max-width: $sm) {
     padding: 30px 0;
-    background-image: url("/img/homepage/vector-mobile.svg"), linear-gradient(90.16deg, #030332 0.14%, #171753 99.87%);
-    background-repeat: no-repeat;
     // min-height: unset;
     // min-height: calc(100vh - 75px) !important;
     &::before {
