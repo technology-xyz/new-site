@@ -27,15 +27,17 @@
                 }
             }
         }
-        .download-wrapper {
-            .download {
-                background: transparent;
-                color: $white;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
-                border-radius: 4px;
-                padding: 2px 20px;
-                line-height: initial;
-            }
+        .download {
+            background: #8B37A0;
+            border-radius: 15px;
+            margin: 0px 26px;
+            font-family: $prompt;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: $white;
         }
         .navbar-collapse {
             .navbar-nav {
@@ -47,14 +49,14 @@
                     a.nav-link {
                         font-size: 18px;
                         color: $white;
-                        &.download {
-                            background: transparent;
-                            color: $white;
-                            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
-                            border-radius: 4px;
-                            padding: 2px 20px;
-                            border: solid 1px white;
-                        }
+                        // &.download {
+                        //     background: transparent;
+                        //     color: $white;
+                        //     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+                        //     border-radius: 4px;
+                        //     padding: 2px 20px;
+                        //     border: solid 1px white;
+                        // }
                     }
                 }
             }
@@ -78,11 +80,6 @@
             .toggler-wrapper {
                 height: 75px;
             }
-            .download-wrapper {
-                .download {
-                    border: solid 1px white;
-                }
-            }
             .navbar-collapse {
                 .navbar-nav {
                     padding-bottom: 12px;
@@ -93,13 +90,6 @@
                         a.nav-link {
                             color: $white;
                             text-align: center;
-                            &.download {
-                                color: $white;
-                                box-shadow: unset;
-                                border-radius: 0px;
-                                padding: 0.5rem 0;
-                                border: none;
-                            }
                         }
                     }
                 }
