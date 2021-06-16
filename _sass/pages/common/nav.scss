@@ -30,7 +30,6 @@
         .download {
             background: #8B37A0;
             border-radius: 15px;
-            margin: 0px 26px;
             font-family: $prompt;
             font-weight: bold;
             font-size: 16px;
@@ -38,6 +37,7 @@
             text-align: center;
             letter-spacing: 0.1em;
             color: $white;
+            padding: 0 8px;
         }
         .navbar-collapse {
             .navbar-nav {
@@ -75,7 +75,7 @@
             .navbar-collapse {
                 .navbar-nav {
                     .nav-item {
-                        margin-left: 0;
+                        margin-left: 30px;
                     }
                 }
             }
