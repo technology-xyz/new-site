@@ -1,9 +1,25 @@
 @import "variables";
 
 #footer {
+    background: url('/img/common/footer_bk.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     .container {
         padding: 50px 0;
-        
+        .logo-wrap1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .w200{ 
+                width: 250px;
+            }
+            .social-btns{
+                flex: 1;
+                .social-icon{
+                    margin-right: 50px;
+                }
+            }
+        }
     }
     
 }
