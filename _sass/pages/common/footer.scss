@@ -4,15 +4,21 @@
     background: url('/img/common/footer_bk.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    .desktop-area{
+        display: block;
+    }
+    .mobile-area{
+        display: none;
+    }
     .container {
         padding: 50px 0;
+        .w200{ 
+            width: 250px;
+        }
         .logo-wrap1{
             display: flex;
             flex-direction: row;
             align-items: center;
-            .w200{ 
-                width: 250px;
-            }
             .social-btns{
                 flex: 1;
                 .social-icon{
@@ -20,6 +26,122 @@
                 }
             }
         }
+        .logo-wrap2{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            .company-area{
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                height: 100%;
+                max-height: 250px;
+                justify-content: space-between;
+                a{
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    margin: 5px 5px 5px 0;
+                }
+            }
+            .contact-area{
+                display: flex;
+                flex-direction: column;
+                max-width: 800px;
+                .font1{
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #3ACEBC;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+            .contact-wrap{
+                display: flex;
+                a{
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 57px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        @media (max-width: 1200px) {
+            .logo-wrap2{
+                .contact-area{
+                    flex: 1;
+                    max-width: none;
+                }
+            }
+        }
+        @media (max-width: 1024px) {
+            .logo-wrap2{
+                .company-area{
+                    .font1{
+                        margin-top: 0;
+                    }
+                }
+                .contact-area{
+                    flex: 1;
+                    max-width: none;
+                }
+                .contact-wrap{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
     }
-    
+    @media (max-width: 767px) {
+        .desktop-area{
+            display: none;
+        }
+        .mobile-area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .m-wrap2{
+                display: flex;
+                flex-direction: row;
+            }
+            .company-name{
+                margin: 15px 20px;
+                a{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                }
+            }
+            .social-btns{
+                a{
+                    margin: 20px;
+                }
+            }
+            .lbl-contact-us{
+                margin-top: 30px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #3ACEBC;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .mobile-area{
+            .company-name{
+                margin: 10px 20px;
+            }
+            .social-btns{
+                a{
+                    margin: 10px 20px;
+                }
+            }
+            .lbl-contact-us{
+                margin-top: 20px;
+            }
+        }
+    }
 }
