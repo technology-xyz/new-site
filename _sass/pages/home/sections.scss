@@ -111,14 +111,35 @@
             font-size: 12px;
             line-height: 18px;
         }
-        .koi-box{
-            img{
-                margin-left: 20px;
+    }
+    @media (max-width: 575px) {
+        .become-a-client{
+            .koi-box{
+                img{
+                    margin-left: 20px;
+                    width: 120px;
+                }
+                .koi-descr{
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    flex: 1;
+                }
             }
-            .koi-descr{
-                margin-left: 25px;
-                margin-right: 25px;
-                flex: 1;
+        }
+    }
+    @media (max-width: 450px) {
+        .become-a-client{
+            .koi-box{
+                img{
+                    width: 100px;
+                    margin: 10px 0 10px 20px;
+                }
+                .koi-descr{
+                    margin-left: 0px;
+                    margin-right: 25px;
+                    flex: 1;
+                    text-align: right;
+                }
             }
         }
     }
