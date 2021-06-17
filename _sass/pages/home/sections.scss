@@ -10,9 +10,14 @@
         line-height: 133.7%;
         text-align: center;
         letter-spacing: 0.15em;
-        text-decoration-line: underline;
         text-transform: uppercase;
-
+        color: #FFFFFF;
+    }
+    .font-cap2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
         color: #FFFFFF;
     }
 
@@ -20,8 +25,46 @@
         background-color: #442966;
         .image-area{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            .join-option{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 160px;
+                }
+            }
+            .img-desc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 240px;
+            }
+        }
+        @media (max-width: 768px) {
+            .image-area{
+                flex-direction: column;
+                .join-option{
+                    margin-top: 50px;
+                    &:first-child{
+                        margin-top: 10px;
+                    }
+                    .img-desc{
+                        width: auto;
+                    }
+                }
+            }
+            .font-cap1 {
+                font-size: 20px;
+                line-height: 133.7%;
+            }
+            .font-cap2{
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
     }
-
+    .latest-clients{
+        background: #35373D;
+    }
 }
