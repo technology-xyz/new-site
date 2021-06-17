@@ -1,5 +1,23 @@
 @import "variables";
 
-.what-need {
-  
+.home-body {
+    section{
+        padding: 85px 0;
+    }
+    .font-cap1 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 133.7%;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    .what-need {
+        background-color: #442966;
+    }
+
 }
