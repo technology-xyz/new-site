@@ -27,6 +27,13 @@
         color: #FFFFFF;
         letter-spacing: 10%;
     }
+    .font-cap4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
 
     .what-need {
         background-color: #442966;
@@ -51,6 +58,28 @@
     }
     .latest-clients{
         background: #35373D;
+    }
+    .become-a-client{
+        background-color: #442966;
+        padding-left: 35px;
+        padding-right: 35px;
+        .koi-box{
+            display: flex;
+            flex-direction: row;
+            max-width: 690px;
+            margin: 0 auto;
+            background-color: #563399;
+            border-radius: 38px;
+            align-items: center;
+            img{
+                margin-left: 35px;
+            }
+            .koi-descr{
+                margin-left: 50px;
+                margin-right: 25px;
+                flex: 1;
+            }
+        }
     }
     @media (max-width: 768px) {
         .image-area{
@@ -77,6 +106,20 @@
             font-size: 24px;
             line-height: 37px;
             font-weight: 500;
+        }
+        .font-cap4{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .koi-box{
+            img{
+                margin-left: 20px;
+            }
+            .koi-descr{
+                margin-left: 25px;
+                margin-right: 25px;
+                flex: 1;
+            }
         }
     }
 }
