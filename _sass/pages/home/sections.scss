@@ -20,6 +20,13 @@
         line-height: 36px;
         color: #FFFFFF;
     }
+    .font-cap3{
+        font-style: normal;
+        font-size: 38px;
+        line-height: 58px;
+        color: #FFFFFF;
+        letter-spacing: 10%;
+    }
 
     .what-need {
         background-color: #442966;
@@ -41,30 +48,35 @@
                 width: 240px;
             }
         }
-        @media (max-width: 768px) {
-            .image-area{
-                flex-direction: column;
-                .join-option{
-                    margin-top: 50px;
-                    &:first-child{
-                        margin-top: 10px;
-                    }
-                    .img-desc{
-                        width: auto;
-                    }
-                }
-            }
-            .font-cap1 {
-                font-size: 20px;
-                line-height: 133.7%;
-            }
-            .font-cap2{
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
     }
     .latest-clients{
         background: #35373D;
+    }
+    @media (max-width: 768px) {
+        .image-area{
+            flex-direction: column;
+            .join-option{
+                margin-top: 50px;
+                &:first-child{
+                    margin-top: 10px;
+                }
+                .img-desc{
+                    width: auto;
+                }
+            }
+        }
+        .font-cap1 {
+            font-size: 20px;
+            line-height: 133.7%;
+        }
+        .font-cap2{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .font-cap3{
+            font-size: 24px;
+            line-height: 37px;
+            font-weight: 500;
+        }
     }
 }
