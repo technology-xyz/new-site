@@ -18,6 +18,10 @@
 
     .what-need {
         background-color: #442966;
+        .image-area{
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
 }
