@@ -1,0 +1,240 @@
+@import "variables";
+
+.home-body {
+    section{
+        padding: 85px 0;
+    }
+    .font-cap1 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 133.7%;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .font-cap2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+    .font-cap3{
+        font-style: normal;
+        font-size: 38px;
+        line-height: 58px;
+        color: #FFFFFF;
+        letter-spacing: 10%;
+    }
+    .font-cap4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+
+    .what-need {
+        background-color: #442966;
+        .image-area{
+            display: flex;
+            justify-content: space-around;
+            .join-option{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 160px;
+                }
+            }
+            .img-desc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 240px;
+            }
+        }
+    }
+    .latest-clients{
+        background: #35373D;
+    }
+    .become-a-client{
+        background-color: #442966;
+        .koi-box{
+            display: flex;
+            flex-direction: row;
+            max-width: 690px;
+            margin: 0 auto;
+            background-color: #563399;
+            border-radius: 38px;
+            align-items: center;
+            img{
+                margin-left: 35px;
+            }
+            .koi-descr{
+                margin-left: 50px;
+                margin-right: 25px;
+                flex: 1;
+            }
+        }
+        .become-container{
+            background: url('/img/landing/bk_lines.svg');
+            min-height: 800px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -100px;
+            @media (max-width: 1500px) {
+                min-height: 650px;
+            }
+            @media (max-width: 1300px) {
+                margin-top: -80px;
+                min-height: 580px;
+            }
+            @media (max-width: 1100px) {
+                margin-top: -50px;
+                min-height: 500px;
+            }
+            @media (max-width: 900px) {
+                margin-top: 0px;
+                min-height: 330px;
+            }
+            @media (max-width: 767px) {
+                background-size: cover;
+            }
+        }
+        .become-clinet-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #35373D;
+            border-radius: 38px;
+            padding: 52px 75px;
+
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 57px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            @media (max-width: 1100px) {
+                padding: 25px 35px;
+                font-size: 30px;
+                line-height: 45px;
+                img{width: 30px;}
+            }
+            @media (max-width: 575px) {
+                padding: 20px 35px;
+                font-size: 20px;
+                line-height: 30px;
+                img{width: 20px;}
+            }
+        }
+    }
+    .operation{
+        background: url('/img/landing/bk_operation.png');
+        background-size: 100% 100%;
+        margin-top: -2px;
+        background-repeat: no-repeat;
+        .operation-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .lbl1{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 38px;
+                text-align: center;
+                color: #3ACEBC;
+                &:last-child{
+                    color: #66CCFF;
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .image-area{
+            flex-direction: column;
+            .join-option{
+                margin-top: 50px;
+                &:first-child{
+                    margin-top: 10px;
+                }
+                .img-desc{
+                    width: auto;
+                }
+            }
+        }
+        .font-cap1 {
+            font-size: 20px;
+            line-height: 133.7%;
+        }
+        .font-cap2{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .font-cap3{
+            font-size: 24px;
+            line-height: 37px;
+            font-weight: 500;
+        }
+        .font-cap4{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .koi-box{
+            margin-left: 35px !important;
+            margin-right: 35px !important;
+        }
+        .operation{
+            padding: 50px 0;
+            .operation-container{
+                .lbl1{
+                    font-size: 15px;
+                    line-height: 19px;
+                    &:last-child{
+                        margin: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .become-a-client{
+            .koi-box{
+                img{
+                    margin-left: 20px;
+                    width: 120px;
+                }
+                .koi-descr{
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    flex: 1;
+                }
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        .become-a-client{
+            .koi-box{
+                img{
+                    width: 100px;
+                    margin: 10px 0 10px 20px;
+                }
+                .koi-descr{
+                    margin-left: 0px;
+                    margin-right: 25px;
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+            
+        }
+    }
+}

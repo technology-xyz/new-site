@@ -1,0 +1,146 @@
+@import "variables";
+
+#topbar {
+    position: fixed;
+    min-height: 62px;
+    padding: 0;
+    background: $purpleDarkBg;
+    // background: url('/img/common/bk_header.svg') 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s;
+    z-index: 10;
+
+
+    .container-fluid {
+        padding: 0 50px;
+        .toggler-wrapper {
+            height: 100%;
+            min-height: 62px;
+            display: flex;
+            align-items: center;
+            .navbar-toggler {
+                // margin-left: 32px;
+                .nav-menu-icon {
+                    color: $white;
+                }
+            }
+        }
+        .download {
+            background: #8B37A0;
+            border-radius: 15px;
+            font-family: $prompt;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: $white;
+            padding: 0 8px;
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a.nav-link {
+                        color: $white;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+
+                        // &.download {
+                        //     background: transparent;
+                        //     color: $white;
+                        //     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+                        //     border-radius: 4px;
+                        //     padding: 2px 20px;
+                        //     border: solid 1px white;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        border: 0px solid transparent;
+    }
+    @media (max-width: 1200px) {
+        .container-fluid {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $sm) {
+        .container-fluid {
+            padding: 0 15px;
+            .toggler-wrapper {
+                height: 75px;
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        justify-content: flex-end;
+                        margin-left: 0;
+                        padding-right: 0;
+                        a.nav-link {
+                            color: $white;
+                            text-align: center;
+                            &.download{
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        // width: 170px !important;
+        // right: 0;
+        // background: linear-gradient(90deg, #030332 0%, #171753 100%) !important;
+        // background: url('/img/common/bk_header_mobile.svg') 100%;
+        // background-size: contain;
+        &.isOpened {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16) !important;
+        }
+        .container-fluid {
+            .toggler-wrapper {
+                width: 100%;
+            }
+            .navbar-brand {
+                img {
+                    width: 44px;
+                }
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    width: 135px;
+                    margin: 0 auto !important;
+                    border-bottom: 0.75px solid white;
+                    a.nav-link{
+                        font-size: 17px;
+                        line-height: 32px;
+                        width: 100% !important;
+                        text-align: center;
+                    }
+                    &:last-child {
+                        border-bottom: 0px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
