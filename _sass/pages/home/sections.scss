@@ -135,7 +135,9 @@
         }
     }
     .operation{
-        background: url('/img/landing/bk_operation.png') 100%;
+        background: url('/img/landing/bk_operation.png');
+        background-size: 100% 100%;
+        margin-top: -2px;
         background-repeat: no-repeat;
         .operation-container{
             display: flex;
@@ -189,6 +191,18 @@
         .koi-box{
             margin-left: 35px !important;
             margin-right: 35px !important;
+        }
+        .operation{
+            padding: 50px 0;
+            .operation-container{
+                .lbl1{
+                    font-size: 15px;
+                    line-height: 19px;
+                    &:last-child{
+                        margin: 30px 0;
+                    }
+                }
+            }
         }
     }
     @media (max-width: 575px) {
