@@ -1,4 +1,3 @@
-# xyz-github-page
-xyz github pages web site
+# .xyz website
+The face of web 3
 
-temp repo for html version
