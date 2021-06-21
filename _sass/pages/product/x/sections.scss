@@ -1,0 +1,54 @@
+@import "variables";
+
+.x-body {
+    section{
+        padding: 85px 0;
+    }
+    .font-cap1 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 68px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #3ACEBC;
+    }
+    .font-cap2{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .join-area {
+        background-color: #442966;
+        position: relative;
+        .fw-pin{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            img{width: 100%;}
+        }
+        .bw-pin{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            background-color: #260840;
+            .before{
+                position: absolute;
+                width: 100px;
+                height: 100%;
+                left: -150px;
+                background: linear-gradient(to bottom right, #442966 0%, #442966 50%, #260840 50%, #260840 100%);
+            }
+        }
+    }
+
+}
