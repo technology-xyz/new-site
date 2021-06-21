@@ -2,7 +2,7 @@
 
 #about-header {
   position: relative;
-  background: url('/img/landing/bk_header.png');
+  background: url('/img/about/main_bk.png');
   background-size: cover;
   color: $white;
   padding: 200px 0 160px;
@@ -13,18 +13,19 @@
     padding: 75px 0;
   }
   .header-description{
-    max-width: 1100px;
-    padding: 45px;
-    background: #452966b3;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    max-width: 670px;
+  }
+  .color-green{
+    color: #3ACEBC !important;
   }
   .font-cap1{
     font-weight: bold;
-    font-size: 58px;
-    line-height: 80px;
+    font-size: 74px;
+    line-height: 108px;
     color: #FFFFFF;
   }
   .font-cap2{
+    font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     color: #FFFFFF;
