@@ -24,6 +24,9 @@
                 .social-icon{
                     margin-right: 50px;
                 }
+                a, a:hover{
+                    text-decoration: none !important;
+                }
             }
         }
         .logo-wrap2{
@@ -118,6 +121,7 @@
             .social-btns{
                 a{
                     margin: 20px;
+                    text-decoration: none !important;
                 }
             }
             .lbl-contact-us{
