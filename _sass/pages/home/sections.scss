@@ -172,15 +172,20 @@
         }
     }
     @media (max-width: 768px) {
-        .image-area{
-            flex-direction: column;
-            .join-option{
-                margin-top: 50px;
-                &:first-child{
-                    margin-top: 10px;
-                }
-                .img-desc{
-                    width: auto;
+        .what-need{
+            .image-area{
+                flex-direction: column;
+                .join-option{
+                    margin-top: 50px;
+                    &:first-child{
+                        margin-top: 10px;
+                    }
+                    img{
+                        width: 120px;
+                    }
+                    .img-desc{
+                        width: auto;
+                    }
                 }
             }
         }
