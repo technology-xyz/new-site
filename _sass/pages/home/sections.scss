@@ -74,11 +74,21 @@
             align-items: center;
             img{
                 margin-left: 35px;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
             .koi-descr{
                 margin-left: 50px;
                 margin-right: 25px;
                 flex: 1;
+            }
+            @media (max-width: 768px) {
+                img{
+                    width: 80px;
+                }
+                .koi-descr{
+                    text-align: right;
+                }
             }
         }
         .become-container{
@@ -213,7 +223,7 @@
             .koi-box{
                 img{
                     margin-left: 20px;
-                    width: 120px;
+                    width: 80px;
                 }
                 .koi-descr{
                     margin-left: 25px;
@@ -227,7 +237,6 @@
         .become-a-client{
             .koi-box{
                 img{
-                    width: 100px;
                     margin: 10px 0 10px 20px;
                 }
                 .koi-descr{
