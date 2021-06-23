@@ -215,6 +215,11 @@
           margin: 50px 0;
         }
       }
+      &:hover {
+        .lbl1 {
+          color: white;
+        }
+      }
     }
   }
   @media (max-width: 768px) {
