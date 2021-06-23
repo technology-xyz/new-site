@@ -1,129 +1,66 @@
 @import "variables";
 
 .x-body {
-    a{
-        text-decoration: none;
-    }
-    section{
-        padding: 85px 0;
-    }
-    .font-cap1 {
-        font-weight: 700;
+  .join-area {
+    background-color: #260840;
+    position: relative;
+    display: flex;
+    height: 426px;
+    .join-left {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      clip-path: polygon(0 0, 100% 0, 73% 100%, 0% 100%);
+      background-color: #442966;
+      a {
+        font-family: Prompt;
+        font-style: normal;
+        font-weight: bold;
         font-size: 45px;
         line-height: 68px;
-        letter-spacing: 2px;
+        letter-spacing: 0.105em;
         text-transform: uppercase;
-        color: #3ACEBC;
-        margin-bottom: 15px;
+        color: #3acebc;
+        margin-left: 32px;
+      }
     }
-    .font-cap2{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        color: #FFFFFF;
+    .join-right {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 472px;
+      }
     }
-
+  }
+  @media (max-width: 768px) {
     .join-area {
-        background-color: #442966;
-        position: relative;
-        .fw-pin{
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 105px;
-            img{width: 100%;}
+      flex-direction: column;
+      height: unset;
+      .join-left {
+        width: 100%;
+        clip-path: unset;
+        height: 150px;
+        .join-img {
+          height: 100%;
+          img {
+            height: 100%;
+            width: auto;
+          }
         }
-        .bw-pin{
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 40%;
-            display: flex;
-            align-items: center;
-            background-color: #260840;
-            padding-left: 100px;
-            .before{
-                position: absolute;
-                width: 100px;
-                height: 100%;
-                left: -100px;
-                background: linear-gradient(to bottom right, #442966 0%, #442966 50%, #260840 50%, #260840 100%);
-            }
+        a {
+          font-size: 18px;
+          line-height: 30px;
         }
-        @media (max-width: 1350px) {
-            .font-cap1{
-                font-size: 30px;
-                line-height: 50px;
-                padding-left: 100px;
-            }
-            .fw-pin{
-                width: 97px;
-            }
-            .bw-pin{
-                padding-left: 0;
-            }
+      }
+      .join-right {
+        width: 100%;
+        padding: 20px 0;
+        img {
+          max-width: 300px;
         }
-        @media (max-width: 992px) {
-            .font-cap1{
-                // width: 50%;
-                padding-left: 40px;
-                text-align: center;
-            }
-            .font-cap2{
-                padding: 0 20px;
-            }
-            .fw-pin{
-                top: 45px;
-                width: 75px;
-            }
-        }
-        @media (max-width: 768px) {
-            .font-cap1{
-                padding-left: 0px;
-            }
-            .font-cap2{
-                padding: 0 0px;
-                font-size: 21px;
-            }
-            .fw-pin{
-                top: 67px;
-                width: 60px;
-            }
-        }
-        @media (max-width: 575px) {
-            .font-cap1{
-                font-size: 22px;
-                line-height: 32px;
-            }
-            .font-cap2{
-                font-size: 20px;
-                margin-left: -20px;
-            }
-            .fw-pin{
-                display: none;
-            }
-        }
-        @media (max-width: 575px) {
-            .font-cap1{
-                font-size: 22px;
-                line-height: 32px;
-            }
-            .font-cap2{
-                font-size: 17px;
-            }
-            .bw-pin{
-                width: 43%;
-                .before {
-                    width: 40px;
-                    height: 100%;
-                    left: -40px;
-                }
-            } 
-        }
+      }
     }
-
+  }
 }
