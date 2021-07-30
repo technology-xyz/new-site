@@ -16,6 +16,22 @@
       flex-direction: column;
     }
   }
+  .hero-right {
+    .nav-links-wrapper {
+      .nav-links {
+        display: flex;
+      }
+    }
+    .hero-content {
+      display: flex;
+      align-items: center;
+      .section-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
   @media (max-width: 1450px) {
   }
   @media (max-width: 1250px) {
