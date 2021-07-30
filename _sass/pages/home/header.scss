@@ -34,6 +34,13 @@
         align-items: flex-start;
       }
     }
+    .latest-client {
+      display: flex;
+      .latest-content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
   @media (max-width: 1450px) {
   }
