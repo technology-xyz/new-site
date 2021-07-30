@@ -2,7 +2,20 @@
 
 #home-hero {
   background-color: #292929;
-  height: 1000px;
+  display: flex;
+  color: white;
+  .hero-left {
+    border-right: solid 3px #3ACEBC;
+    width: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .social-btns {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   @media (max-width: 1450px) {
   }
   @media (max-width: 1250px) {
