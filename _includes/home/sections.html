@@ -1,7 +1,21 @@
-<div class="home-body">
-  <section class="what-need">
+<div class="home-sections">
+  <section id="what-need">
     <div class="container">
-      
+      <div class="what-need-content">
+        <h2>What Do You Need?</h2>
+        <div class="divider"></div>
+        <div class="what-need-cards">
+          {% for item in site.data.home %}
+          <div class="what-need-card">
+            <h6>{{ item.title }}</h6>
+            <div class="card-bottom">
+              <a href="#">See more</a>
+              <img src="/img/icons/{{ item.img }}.svg" />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </section>
   <section class="latest-clients">

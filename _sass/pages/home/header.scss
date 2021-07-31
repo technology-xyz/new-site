@@ -10,6 +10,7 @@
   .hero-left {
     border-right: solid 3px #3acebc;
     width: 128px;
+    min-width: 128px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +63,8 @@
     }
     .latest-client {
       display: flex;
+      padding: 25px 0;
+      background-color: #35373D;
       .latest-left {
         display: flex;
         align-items: center;

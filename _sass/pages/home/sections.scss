@@ -1,5 +1,20 @@
 @import "variables";
 
-.home-body {
-  
+.home-sections {
+  background-color: #292929;
+  color: white;
+  #what-need {
+    .what-need-content {
+      .what-need-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .what-need-card {
+          width: 232px;
+          height: 232px;
+          background-color: #35373D;
+        }
+      }
+    }
+  }
 }
