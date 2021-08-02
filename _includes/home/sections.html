@@ -1,85 +1,75 @@
-<div class="home-body">
-  <section class="what-need">
+<div class="home-sections">
+  <section id="what-need">
     <div class="container">
-      <div class="what-need-container">
-        <div class="font-cap1 underline">What Do You Need?</div>
-      </div>
-      <div class="row image-area mt50">
-        <a href="/product/x">
-          <div class="join-option">
-            <img src="/img/landing/x.svg" />
-            <div class="img-desc">
-              <div class="font-cap2 text-center mt20">
-                Reliable Blockchain Developers
-              </div>
+      <div class="what-need-content">
+        <h2>What Do You Need?</h2>
+        <div class="divider"></div>
+        <div class="what-need-cards">
+          {% for item in site.data.home %}
+          <div class="what-need-card">
+            <h6>{{ item.title }}</h6>
+            <div class="card-bottom">
+              <a href="#">See more</a>
+              <img src="/img/icons/{{ item.img }}.svg" />
             </div>
           </div>
-        </a>
-        <div class="join-option">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="web3">
+    <div class="container">
+      <div class="web3-content">
+        <div class="web3-title">Web 3.0 <br /> Skills</div>
+        <div class="coins-wrapper">
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-ethereum.svg" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-metamask.svg" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-hardhat.svg" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-typescript.svg" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-bitcoin.svg" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="/img/icons/icon-a.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </section>
+  <section id="home-bottom">
+    <div class="container">
+      <div class="home-bottom-wrapper">
+        <a class="bottom-logo" href="#home-hero"><img src="/img/logo.svg" width="32" /></a>
+        <div class="bottom-line"></div>
+        <div class="social-btns">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdDTvDBwfHys869BP3vKo_2e
-                    vHvu59VuslDA6J9q-UIZZ7LJA/viewform?embedded=true"
+            href="https://discord.gg/ZVvsXHYCRk"
             target="_blank"
+            class="social-icon"
           >
-            <img src="/img/landing/y.svg" />
+            <img src="/img/icons/social_discord.svg" alt="" width="46" />
           </a>
-          <div class="img-desc">
-            <div class="font-cap2 text-center mt20">
-              dApp Product Development
-            </div>
-          </div>
-        </div>
-        <div class="join-option">
-          <a href="mailto:defi@web3tech.xyz">
-            <img src="/img/landing/z.svg" />
+          <a href="mailto:info@web3tech.xyz" class="social-icon">
+            <img src="/img/icons/social_email.svg" alt="" width="44" />
           </a>
-          <div class="img-desc">
-            <div class="font-cap2 text-center mt20">DeFi Advisory</div>
-          </div>
+          <a href="https://t.me/joinchat/EDKbUy1f4p0zNGVh" class="social-icon">
+            <img src="/img/icons/social_tw.svg" alt="" width="46" />
+          </a>
+          <a href="https://github.com/technology-xyz" class="social-icon">
+            <img src="/img/icons/icon_github.svg" alt="" width="46" />
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  <section class="latest-clients">
-    <div class="container">
-      <div class="font-cap3 text-center">LATEST CLIENTS</div>
-    </div>
-  </section>
-  <section class="become-a-client">
-    <div class="container">
-      <div class="clients-wrapper">
-        <a class="koi-box" href="https://koii.network" target="_blank">
-          <img src="/img/landing/openkoi.svg" alt="koii" />
-          <div class="font-cap4 koi-descr">
-            KOI is building Decentralized Media and the Attention Economy
-          </div>
-        </a>
-        <a class="keytango-box" href="https://keytango.io" target="_blank">
-          <img src="/img/icons/icon_keytango.svg" alt="koii" />
-          <div class="keytango-descr">DeFi for everyone</div>
-        </a>
-      </div>
-      <div class="become-container">
-        <a
-          class="become-clinet-area"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdDTvDBwfHys869BP3v
-      Ko_2evHvu59VuslDA6J9q-UIZZ7LJA/viewform?embedded=true"
-          target="_blank"
-        >
-          <img src="/img/landing/forward.svg" alt="forward" />
-          &nbsp;&nbsp;become a client
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="operation">
-    <a
-      class="operation-container"
-      href="https://medium.com/xyz-technologies"
-      target="_blank"
-    >
-      <h3 class="lbl1">We operate in the Metaverse!</h3>
-      <h3 class="lbl1">&lt;Access Web3.0 Here&gt;</h3>
-    </a>
   </section>
 </div>
