@@ -33,4 +33,17 @@
       }
     }
   }
+  #home-bottom {
+    .home-bottom-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .bottom-line {
+        flex: 1;
+        height: 3px;
+        background-color: #3ACEBC;
+        margin: 0 45px;
+      }
+    }
+  }
 }
