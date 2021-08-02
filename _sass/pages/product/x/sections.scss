@@ -22,6 +22,15 @@
         text-transform: uppercase;
         color: #3acebc;
         margin-left: 32px;
+        br {
+          display: none;
+          @media (max-width: 1383px) {
+            display: block;
+          }
+          @media (max-width: 911px) {
+            display: none;
+          }
+        }
       }
     }
     .join-right {
