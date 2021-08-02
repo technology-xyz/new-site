@@ -15,13 +15,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 36px 0;
+    .logo-icon {
+      img {
+        width: 60px;
+      }
+    }
     .social-btns {
       display: flex;
       flex-direction: column;
+      max-width: 40px;
+      .social-icon {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
   .hero-right {
     flex: 1;
+    .btn-hero {
+      height: 49px;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      padding: 0 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .nav-links-wrapper {
       height: 76px;
       display: flex;
@@ -45,13 +67,18 @@
         }
       }
       .hero-title-wrapper {
-        max-width: 382px;
+        padding-right: 127px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
       }
     }
     .latest-client {
       display: flex;
       padding: 25px 0;
-      background-color: #35373D;
+      background-color: #35373d;
       .latest-left {
         display: flex;
         align-items: center;

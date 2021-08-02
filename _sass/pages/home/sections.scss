@@ -4,6 +4,7 @@
   background-color: #292929;
   color: white;
   #what-need {
+    padding: 85px 0;
     .what-need-content {
       .what-need-cards {
         display: flex;
@@ -12,12 +13,25 @@
         .what-need-card {
           width: 232px;
           height: 232px;
-          background-color: #35373D;
+          background-color: #35373d;
+          padding: 33px 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .card-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
         }
       }
     }
   }
   #web3 {
+    background-color: #35373D;
+    min-height: 404px;
+    display: flex;
+    align-items: center;
     .web3-content {
       display: flex;
       align-items: center;
@@ -34,6 +48,9 @@
     }
   }
   #home-bottom {
+    min-height: 164px;
+    display: flex;
+    align-items: center;
     .home-bottom-wrapper {
       display: flex;
       justify-content: space-between;
@@ -41,7 +58,7 @@
       .bottom-line {
         flex: 1;
         height: 3px;
-        background-color: #3ACEBC;
+        background-color: #3acebc;
         margin: 0 45px;
       }
     }
