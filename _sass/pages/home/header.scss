@@ -49,6 +49,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .logo-icon-sm {
+        display: none;
+      }
       .nav-links {
         display: flex;
         a {
@@ -57,11 +60,8 @@
       }
     }
     .hero-content {
-      display: flex;
-      align-items: center;
-      padding: 34px;
       .hero-img-wrapper {
-        margin-right: 50px;
+        // margin-right: 50px;
         img {
           width: 100%;
         }
@@ -126,6 +126,76 @@
   @media (max-width: 1100px) {
   }
   @media (max-width: 1000px) {
+    .hero-left {
+      display: none;
+      width: 0;
+    }
+    .hero-right {
+      .btn-hero {
+        height: 36px;
+      }
+      .nav-links-wrapper {
+        background-color: #35373D;
+        padding: 0 20px;
+        .logo-icon-sm {
+          display: block;
+          width: 40px;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+      .hero-content {
+        .hero-title-wrapper {
+          align-items: center;
+          padding-right: 0;
+          margin-bottom: 44px;
+          text-align: center;
+          padding-top: 30px;
+          h3 {
+            font-size: 35px !important;
+          }
+          p {
+            font-size: 14px !important;
+            margin-bottom: 22px;
+          }
+        }
+      }
+      .latest-client {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 50px;
+        .latest-left {
+          border-right: none;
+          max-width: unset;
+          justify-content: center;
+          h4 {
+            font-size: 35px !important;
+          }
+        }
+        .latest-right {
+          flex-direction: column;
+          .img-fish {
+            margin-left: 0px;
+            width: 62px;
+            margin-bottom: 20px;
+          }
+          .latest-content {
+            margin-left: 0;
+            .latest-description {
+              flex-direction: column;
+              font-size: 14px !important;
+              p {
+                margin-bottom: 30px !important;
+              }
+              .btn-hero {
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width: 572px) {
   }
