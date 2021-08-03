@@ -6,6 +6,10 @@
   color: white;
   a {
     color: white;
+    text-decoration: none;
+  }
+  .text-green{
+    color: #3acebc !important;
   }
   .hero-left {
     border-right: solid 3px #3acebc;
@@ -47,6 +51,9 @@
       cursor: pointer;
       &:hover {
         border: 1px solid #3acebc;
+      }
+      &.m-w-165{
+        min-width: 165px; 
       }
     }
     .nav-links-wrapper {
