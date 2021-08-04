@@ -26,7 +26,7 @@
         .download, .active {
             background: #8B37A0;
             border-radius: 15px;
-            font-family: $prompt;
+            font-family: $poppins;
             font-weight: bold;
             font-size: 16px;
             line-height: 24px;
@@ -45,11 +45,11 @@
                     a.nav-link {
                         color: $white;
                         font-size: 16px;
-                        line-height: 24px;
+                        line-height: 18px;
                         text-align: center;
-                        letter-spacing: 0.1em;
-                        &:hover {
-                            color: gray;
+                        &:hover, &.active {
+                            color: $greenLight;
+                            border-bottom: 1px solid $greenLight;
                         }
                         // &.download {
                         //     background: transparent;
