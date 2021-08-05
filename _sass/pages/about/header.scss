@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
   }
   .mobile-main-title{
@@ -70,16 +71,12 @@
   @media (max-width: $sm) {
     .mobile-main-title{
       display: block;
-      position: absolute;
       font-size: 35px !important;
-      padding: 0 50px;
-      text-align: center;
-      background: #292929b0;
-    }
-    .hero-title-wrapper{
       padding: 20px 50px;
-      p{ text-align: center; }
-      h3, a{display: none;}
+      text-align: center;
+    }
+    .main-content-right{
+      display: none;
     }
   }
   @media (max-width: 572px) {
