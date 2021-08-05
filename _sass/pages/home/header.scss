@@ -1,6 +1,6 @@
 @import "variables";
 
-#home-hero {
+.home-hero {
   background-color: #292929;
   display: flex;
   color: white;
@@ -148,16 +148,14 @@
       }
       .nav-links-wrapper {
         background-color: #35373D;
-        padding: 0 20px;
+        width: 100%;
         .logo-icon-sm {
           display: block;
           width: 40px;
         }
-        .nav-links {
-          display: none;
-        }
       }
       .hero-content {
+        padding-top: 76px;
         .hero-title-wrapper {
           align-items: center;
           padding-right: 0;

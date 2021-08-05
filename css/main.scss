@@ -13,7 +13,7 @@ body {
     // scroll-behavior: smooth;
 }
 body {
-    font-family: "Prompt";
+    font-family: 'Poppins', sans-serif;
 }
 .row.container {
     max-width: 1280px;
@@ -58,8 +58,7 @@ h5,
 h6,
 p,
 a {
-    font-family: $prompt;
-    letter-spacing: 0.03em;
+    font-family: $poppins;
 }
 
 .btn {

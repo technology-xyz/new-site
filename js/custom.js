@@ -1,5 +1,5 @@
 function setActiveMenu(paths) {
-  $("#topbar .nav-link").each(function(){
+  $("#new_topbar .nav-link").each(function(){
     if($(this).hasClass('active')) {
       $(this).removeClass('active')
     }
@@ -7,14 +7,18 @@ function setActiveMenu(paths) {
   if(paths.length === 2){
     let route = paths[1]
     switch(route) {
+      case '':
+      case 'home':
+        $('#new_topbar .nav-link.home').addClass('active')
+        break;
       case 'about':
-        $('#topbar .nav-link.about').addClass('active')
+        $('#new_topbar .nav-link.about').addClass('active')
         break;
       case 'discord':
-        $('#topbar .nav-link.discord').addClass('active')
+        $('#new_topbar .nav-link.discord').addClass('active')
         break;
       case 'blog':
-        $('#topbar .nav-link.blog').addClass('active')
+        $('#new_topbar .nav-link.blog').addClass('active')
         break;
     }
   }
