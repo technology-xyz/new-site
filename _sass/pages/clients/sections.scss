@@ -3,33 +3,27 @@
 .clients-sections {
   background-color: #292929;
   color: white;
-  #what-need {
+  #latest_projects {
     padding: 85px 0;
-    .what-need-content {
-      h2 {
-        font-size: 50px !important;
-      }
-      .divider {
-        height: 3px;
-        width: 160px;
-        background-color: #3ACEBC;
-        margin-bottom: 36px;
-      }
-      .what-need-cards {
+    .project-content {
+      .project-cards {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        .what-need-card {
-          width: 232px;
-          height: 232px;
+        .project-card {
           background-color: #35373d;
           padding: 33px 24px;
+          max-width: 324px;
+          max-height: 411px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           h6 {
-            font-size: 24px !important;
+            font-size: 36px !important;
+          }
+          p {
+            font-size: 18px !important;
           }
           a {
             font-size: 16px !important;
