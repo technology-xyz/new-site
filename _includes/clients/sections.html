@@ -1,49 +1,20 @@
 <div class="home-sections">
-  <section id="what-need">
+  <section id="latest_projects">
     <div class="container">
-      <div class="what-need-content">
-        <h2>What Do You Need?</h2>
-        <div class="divider"></div>
-        <div class="what-need-cards">
-          {% for item in site.data.home %}
-          <div class="what-need-card">
+      <div class="project-content">
+        <div class="project-cards">
+          {% for item in site.data.projects %}
+          <div class="project-card">
             <h6>{{ item.title }}</h6>
+            <p>{{ item.description }}</p>
             <div class="card-bottom">
               <a href="#">See more</a>
-              <img src="/img/icons/{{ item.img }}.svg" />
+              <img src="/img/clients/{{ item.img }}.svg" />
             </div>
           </div>
           {% endfor %}
         </div>
       </div>
-    </div>
-  </section>
-  <section id="web3">
-    <div class="container">
-      <div class="web3-content">
-        <div class="web3-title">Web 3.0 <br /> Skills</div>
-        <div class="coins-wrapper">
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-ethereum.svg" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-metamask.svg" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-hardhat.svg" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-typescript.svg" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-bitcoin.svg" />
-          </div>
-          <div class="icon-wrapper">
-            <img src="/img/icons/icon-a.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="divider"></div>
     </div>
   </section>
 </div>
