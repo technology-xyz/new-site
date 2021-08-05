@@ -1,157 +1,53 @@
 @import "variables";
 
 #footer {
-  background: url("/img/common/footer_bk.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .desktop-area {
-    display: block;
-  }
-  .mobile-area {
-    display: none;
-  }
-  .container {
-    padding: 50px 0;
-    .w200 {
-      width: 250px;
+  min-height: 164px;
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  color: white;
+  .home-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .bottom-logo {
+      img {
+        width: 70px;
+      }
     }
-    .logo-wrap1 {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    .social-btns {
+      .social-icon {
+        img {
+          width: 40px;
+          margin-left: 30px;
+        }
+      }
+    }
+    .bottom-line {
+      flex: 1;
+      height: 3px;
+      background-color: #3acebc;
+      margin: 0 45px;
+    }
+  }
+  @media (max-width: 1000px) {
+    min-height: unset;
+    padding: 30px 0;
+    .home-bottom-wrapper {
+      .bottom-line {
+        display: none;
+      }
+      .bottom-logo {
+        img {
+          width: 49px;
+        }
+      }
       .social-btns {
-        flex: 1;
         .social-icon {
-          margin-right: 50px;
-        }
-        a {
-          text-decoration: none !important;
-          img:hover {
-            transition: all 0.1s ease;
-            transform: translateY(-3px);
+          img {
+            width: 30px;
           }
         }
-      }
-    }
-    .logo-wrap2 {
-      display: flex;
-      flex-direction: row;
-      margin-top: 50px;
-      .company-area {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        height: 100%;
-        max-height: 250px;
-        justify-content: space-between;
-        a {
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 36px;
-          color: #ffffff;
-          margin: 5px 5px 5px 0;
-        }
-      }
-      .contact-area {
-        display: flex;
-        flex-direction: column;
-        max-width: 800px;
-        .font1 {
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 36px;
-          color: #3acebc;
-          margin-top: 30px;
-          margin-bottom: 10px;
-        }
-      }
-      .contact-wrap {
-        display: flex;
-        a {
-          font-weight: normal;
-          font-size: 24px;
-          line-height: 57px;
-          color: #ffffff;
-        }
-      }
-    }
-    @media (max-width: 1200px) {
-      .logo-wrap2 {
-        .contact-area {
-          flex: 1;
-          max-width: none;
-        }
-      }
-    }
-    @media (max-width: 1024px) {
-      .logo-wrap2 {
-        .company-area {
-          .font1 {
-            margin-top: 0;
-          }
-        }
-        .contact-area {
-          flex: 1;
-          max-width: none;
-        }
-        .contact-wrap {
-          display: flex;
-          flex-direction: column;
-        }
-      }
-    }
-  }
-  @media (max-width: 767px) {
-    .desktop-area {
-      display: none;
-    }
-    .mobile-area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .m-wrap2 {
-        display: flex;
-        flex-direction: row;
-      }
-      .company-name {
-        margin: 15px 20px;
-        a {
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 18px;
-          color: #ffffff;
-        }
-      }
-      .social-btns {
-        a {
-          margin: 20px;
-          text-decoration: none !important;
-          &:hover {
-            transform: translateY(-3px);
-          }
-        }
-      }
-      .lbl-contact-us {
-        margin-top: 30px;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        color: #3acebc;
-      }
-    }
-  }
-  @media (max-width: 480px) {
-    .mobile-area {
-      .company-name {
-        margin: 10px 20px;
-      }
-      .social-btns {
-        a {
-          margin: 10px 20px;
-        }
-      }
-      .lbl-contact-us {
-        margin-top: 20px;
       }
     }
   }
