@@ -1,123 +1,30 @@
 @import "variables";
 
-#about-header {
-  position: relative;
-  background: url('/img/about/main_bk.png');
-  background-size: cover;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 48px;
-  
-
-  .container{
-    padding: 75px 0;
+#about_hero {
+  .main-content-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
-  .header-description{
-    max-width: 670px;
+  .hero-img-wrapper{
+    padding: 20px 0;
   }
-  .color-green{
-    color: #3ACEBC !important;
-  }
-  .font-cap1{
-    font-weight: bold;
-    font-size: 74px;
-    line-height: 108px;
-    color: #FFFFFF;
-  }
-  .font-cap2{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
-  }
-  .font-cap3{
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: 2px;
-  }
-  .font-cap4{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .section1{
-    .section-description{
-      display: flex;
-      margin-bottom: 50px;
-      .left-area{ 
-        flex: 1; 
-        padding-right: 15px;
-      }
-      .right-area{ 
-        flex: 1; 
-        padding-right: 15px;
-      }
-    }
+  .hero-title-wrapper{
+    padding: 20px 0;
+    p{ text-align: left;}
   }
   @media (max-width: 1250px) {
-    .font-cap1{
-      font-size: 60px;
-      line-height: 90px;
-    }
-    // .font-cap2{
-    //   font-size: 20px;
-    //   line-height: 30px;
-    // }
-  }
-  @media (max-width: 992px) {
-    .font-cap1{
-      font-size: 44px;
-      line-height: 60px;
-    }
-    .font-cap2{
-      font-size: 17px;
-      line-height: 30px;
-    }
-    .font-cap3{
-      font-size: 44px;
-      line-height: 60px;
-    }
-    .font-cap4{
-      font-size: 16px;
-      line-height: 24px;
-    }
-    .section1{
-      .section-description{
-        flex-direction: column;
-        .left-area, .right-area{
-          padding-right: 0px;
-        }
-        .right-area{
-          margin-top: 25px;
-        }
-      }
-    }
   }
   @media (max-width: $sm) {
-    // min-height: unset;
-    // min-height: calc(100vh - 75px) !important;
-    .container{ padding: 50px 0;}
-    .font-cap1{
-      font-size: 34px;
-      line-height: 46px;
-    }
-    .font-cap3{
-      font-size: 34px;
-      line-height: 46px;
+    .hero-title-wrapper{
+      padding: 20px 50px;
+      p{ text-align: center; }
+      a{display: none;}
     }
   }
   @media (max-width: 572px) {
-    
   }
   @media (max-width: 479px) {
-    .font-cap1{
-      text-align: center;
-    }
-    .font-cap3{
-      text-align: center;
-    }
   }
 }
