@@ -8,10 +8,14 @@
             <div class="img-area">
               <img src="/img/clients/{{ item.img }}.svg" />
             </div>
-            <h6>{{ item.title }}</h6>
-            <p>{{ item.description }}</p>
-            <div class="card-bottom">
-              <a href="#">See more</a>
+            <div class="card-content-area">
+              <div class="card-content-body">
+                <h6 class="text-green">{{ item.title }}</h6>
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="card-bottom">
+                <a href="#">See more</a>
+              </div>
             </div>
           </div>
           {% endfor %}
