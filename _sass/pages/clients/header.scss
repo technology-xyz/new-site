@@ -1,12 +1,15 @@
 @import "variables";
 
-.home-hero {
+#clients_hero {
   background-color: #292929;
   display: flex;
   color: white;
   a {
     color: white;
     text-decoration: none;
+  }
+  .text-green{
+    color: #3acebc !important;
   }
   .hero-left {
     border-right: solid 3px #3acebc;

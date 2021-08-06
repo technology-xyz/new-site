@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
   }
   .mobile-main-title{
@@ -29,9 +30,11 @@
       display: flex;
       align-items: center;
       background-color: #35373d;
-      max-width: 272px;
-      padding: 0 50px;
+      max-width: 650px;
+      padding-left: 50px;
       h4 {
+        padding: 20px 0;
+        margin-bottom: 0px;
         font-size: 40px !important;
       }
       .divider{display: none;}
@@ -55,10 +58,14 @@
       flex-direction: column;
       .latest-left{
         flex-direction: column;
-        max-width: 100%;
-        background-color: transparent;
-        padding: 0 0 50px 0;
-        .divider{ display: block; margin-top: 15px; }
+        max-width: 90%;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        align-items: flex-start;
+        h4 {
+          font-size: 30px !important;
+        }
+        .divider{ display: block; }
       }
       .latest-right {
         padding: 50px 25px;
@@ -70,16 +77,12 @@
   @media (max-width: $sm) {
     .mobile-main-title{
       display: block;
-      position: absolute;
       font-size: 35px !important;
-      padding: 0 50px;
-      text-align: center;
-      background: #292929b0;
-    }
-    .hero-title-wrapper{
       padding: 20px 50px;
-      p{ text-align: center; }
-      h3, a{display: none;}
+      text-align: center;
+    }
+    .main-content-right{
+      display: none;
     }
   }
   @media (max-width: 572px) {

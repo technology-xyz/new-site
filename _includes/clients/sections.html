@@ -1,0 +1,26 @@
+<div class="clients-sections">
+  <section id="latest_projects">
+    <div class="container">
+      <div class="project-content">
+        <div class="project-cards">
+          {% for item in site.data.projects %}
+          <div class="project-card">
+            <div class="img-area">
+              <img src="/img/clients/{{ item.img }}.svg" />
+            </div>
+            <div class="card-content-area">
+              <div class="card-content-body">
+                <h6 class="text-green">{{ item.title }}</h6>
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="card-bottom">
+                <a href="#">See more</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
