@@ -10,11 +10,11 @@
             </div>
             <div class="card-content-area">
               <div class="card-content-body">
-                <h6 class="text-green">{{ item.title }}</h6>
+                <a href="{{ item.link }}" class="no-underline"><h6 class="text-green">{{ item.title }}</h6></a>
                 <p>{{ item.description }}</p>
               </div>
               <div class="card-bottom">
-                <a href="#">See more</a>
+                <a href="{{ item.link }}">See more</a>
               </div>
             </div>
           </div>
